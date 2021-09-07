@@ -13,6 +13,9 @@
 		BF8FB73A26DE6A9E005DF712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8FB73826DE6A9E005DF712 /* Main.storyboard */; };
 		BF8FB73C26DE6AA1005DF712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8FB73B26DE6AA1005DF712 /* Assets.xcassets */; };
 		BF8FB73F26DE6AA1005DF712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8FB73D26DE6AA1005DF712 /* LaunchScreen.storyboard */; };
+		BF8FB74826DE6AC7005DF712 /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FB74726DE6AC6005DF712 /* CompanyModel.swift */; };
+		BF8FB74B26DEC7E5005DF712 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FB74A26DEC7E5005DF712 /* Network.swift */; };
+		BF8FB74E26DEDEC5005DF712 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FB74D26DEDEC5005DF712 /* MyCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		BF8FB73B26DE6AA1005DF712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8FB73E26DE6AA1005DF712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8FB74026DE6AA1005DF712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8FB74726DE6AC6005DF712 /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
+		BF8FB74A26DEC7E5005DF712 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BF8FB74D26DEDEC5005DF712 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		BF8FB73126DE6A9E005DF712 /* avito_myTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				BF8FB73226DE6A9E005DF712 /* AppDelegate.swift */,
-				BF8FB73426DE6A9E005DF712 /* SceneDelegate.swift */,
-				BF8FB73626DE6A9E005DF712 /* ViewController.swift */,
+				BFD1EABF26E791D1009E42C9 /* Delegates */,
+				BFD1EABD26E791C4009E42C9 /* View */,
+				BFD1EABC26E791BA009E42C9 /* Controller */,
+				BFD1EAB726E7907F009E42C9 /* Model */,
 				BF8FB73826DE6A9E005DF712 /* Main.storyboard */,
+				BFD1EAB826E79096009E42C9 /* Service */,
 				BF8FB73B26DE6AA1005DF712 /* Assets.xcassets */,
 				BF8FB73D26DE6AA1005DF712 /* LaunchScreen.storyboard */,
 				BF8FB74026DE6AA1005DF712 /* Info.plist */,
 			);
 			path = avito_myTestTask;
+			sourceTree = "<group>";
+		};
+		BFD1EAB726E7907F009E42C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF8FB74726DE6AC6005DF712 /* CompanyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD1EAB826E79096009E42C9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF8FB74A26DEC7E5005DF712 /* Network.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BFD1EABC26E791BA009E42C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF8FB73626DE6A9E005DF712 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFD1EABD26E791C4009E42C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8FB74D26DEDEC5005DF712 /* MyCustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFD1EABF26E791D1009E42C9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BF8FB73226DE6A9E005DF712 /* AppDelegate.swift */,
+				BF8FB73426DE6A9E005DF712 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8FB74B26DEC7E5005DF712 /* Network.swift in Sources */,
 				BF8FB73726DE6A9E005DF712 /* ViewController.swift in Sources */,
+				BF8FB74E26DEDEC5005DF712 /* MyCustomTableViewCell.swift in Sources */,
+				BF8FB74826DE6AC7005DF712 /* CompanyModel.swift in Sources */,
 				BF8FB73326DE6A9E005DF712 /* AppDelegate.swift in Sources */,
 				BF8FB73526DE6A9E005DF712 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59S49A5L67;
 				INFOPLIST_FILE = avito_myTestTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59S49A5L67;
 				INFOPLIST_FILE = avito_myTestTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
