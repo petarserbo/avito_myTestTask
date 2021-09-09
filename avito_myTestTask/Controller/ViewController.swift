@@ -12,13 +12,13 @@ class ViewController: UIViewController {
     
     var avito: Avito?
     let dataFetcher = DataFetcher()
-
+    
     
     func configureTableView(){
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView(frame: .zero)
-
+        
     }
     
     private func showAlert() {
@@ -39,10 +39,10 @@ class ViewController: UIViewController {
             }
             
         }
-       
+        
     }
-
-
+    
+    
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate{
@@ -52,7 +52,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCustomTableViewCell
-    
+        
         let list = avito?.company.employees
         let sortedList = list?.sorted { $0.name < $1.name}
         
